@@ -726,7 +726,7 @@ void lv_demo_benchmark_run_scene(int_fast16_t scene_no)
 
     if(scenes[scene_act].create_cb) {
         lv_label_set_text_fmt(title, "%"LV_PRId32"/%d: %s%s", scene_act * 2 + (opa_mode ? 1 : 0), (int)(dimof(scenes) * 2) - 2,
-                              scenes[scene_act].name, opa_mode ? " + opa" : "");      
+                              scenes[scene_act].name, opa_mode ? " + opa" : "");
         lv_label_set_text(subtitle, "");
 
         rnd_reset();
@@ -958,7 +958,6 @@ static void report_cb(lv_timer_t * timer)
 
         lv_label_set_text_fmt(subtitle, "Result : %"LV_PRId32" FPS",
                               scenes[scene_act].fps_opa);
-                              
         LV_LOG("Result of \"%s + opa\": %"LV_PRId32" FPS", scenes[scene_act].name,
                scenes[scene_act].fps_opa);
     }

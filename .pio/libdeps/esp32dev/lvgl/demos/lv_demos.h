@@ -20,7 +20,9 @@ extern "C" {
 #endif
 
 #if LV_USE_DEMO_BENCHMARK
-#include "benchmark/lv_demo_benchmark.h"
+//#include "benchmark/lv_demo_benchmark.h"
+#include "../src/benchmark/lv_demo_benchmark.h"
+
 #endif
 
 #if LV_USE_DEMO_STRESS
